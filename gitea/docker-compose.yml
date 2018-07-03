@@ -1,0 +1,22 @@
+version: "2"  
+
+networks:   
+    gitea:     
+        external: false  
+        
+services:   
+    server:     
+        image: gitea/gitea:latest     
+        container_name: gitea
+        environment:       
+            - USER_UID=1000       
+            - USER_GID=1000     
+            - RUN_MODE=prod
+        restart: always     
+        networks:       
+            - gitea     
+        volumes:       
+            - .:/data     
+        ports:       
+            - "3000:3000"       
+            - "222:22"
