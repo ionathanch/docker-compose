@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+    ttrss:
+        image: clue/ttrss
+        container_name: ttrss
+        restart: always
+        environment:
+            - SELF_URL_PATH=https://ress.ert.space
+            - DB_HOST=ttrssdb
+            - DB_PORT=5432
+            - DB_TYPE=pgsql
+        ports:
+            - "8181:80"
+        depends_on:
+            - ttrssdb
+    ttrssdb:
+        image: nornagon/postgres
+        container_name: ttrssdb
+        restart: always
+        expose:
+            - "5432"
+        volumes:
+            - ttrssdb:/var/lib/postgresql/9.3/main
+volumes:
+    ttrssdb:
