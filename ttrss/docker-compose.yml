@@ -2,16 +2,20 @@ version: "3"
 
 services:
     ttrss:
-        image: clue/ttrss
+        image: x86dev/docker-ttrss
         container_name: ttrss
         restart: always
         environment:
-            - SELF_URL_PATH=https://ress.ert.space
+            - SELF_URL_PATH=http://ress.ert.space/
+            - TTRSS_SELF_URL=http://ress.ert.space/
+            - TTRSSL_URL=ress.ert.space
+            - DB_PORT_5432_TCP_ADDR=ttrssdb
+            - DB_PORT_5432_TCP_PORT=5432
             - DB_HOST=ttrssdb
             - DB_PORT=5432
             - DB_TYPE=pgsql
         ports:
-            - "8181:80"
+            - "8181:8080"
         depends_on:
             - ttrssdb
     ttrssdb:
