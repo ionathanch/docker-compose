@@ -2,7 +2,7 @@ version: "3"
 
 services:
     ttrss:
-        image: x86dev/docker-ttrss
+        image: valvin1/docker-ttrss # use x86dev/docker-ttrss once #36 is merged into master
         container_name: ttrss
         restart: always
         environment:
