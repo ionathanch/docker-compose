@@ -1,3 +1,5 @@
+# https://docs.gitea.io/en-us/external-renderers/
+
 FROM gitea/gitea
 
 RUN apk --no-cache add \
