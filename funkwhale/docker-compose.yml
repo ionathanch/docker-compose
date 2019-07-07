@@ -2,7 +2,7 @@ version: "3"
 
 services:
   funkwhale:
-    image: funkwhale/all-in-one:0.18.1
+    image: funkwhale/all-in-one:0.19.0
     container_name: funkwhale
     restart: unless-stopped
     env_file: .env
