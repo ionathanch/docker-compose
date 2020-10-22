@@ -6,9 +6,9 @@ services:
         container_name: ttrss
         restart: always
         environment:
-            - SELF_URL_PATH=http://ress.ert.space/
-            - TTRSS_SELF_URL=http://ress.ert.space/
-            - TTRSSL_URL=ress.ert.space
+            - SELF_URL_PATH=http://rss.ionathan.ch/
+            - TTRSS_SELF_URL=http://rss.ionathan.ch/
+            - TTRSSL_URL=rss.ionathan.ch
             - DB_PORT_5432_TCP_ADDR=ttrssdb
             - DB_PORT_5432_TCP_PORT=5432
             - DB_HOST=ttrssdb
