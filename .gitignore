@@ -1,0 +1,11 @@
+*
+!gitea/
+!ghost/
+!nextcloud/
+!standardfile/
+!ttrss/
+!funkwhale/
+!mediawiki/
+!**/docker-compose.yml
+!**/Dockerfile
+!.gitignore
