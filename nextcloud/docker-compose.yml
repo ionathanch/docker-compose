@@ -5,7 +5,7 @@ services:
     image: nextcloud:latest
     container_name: nextcloud
     ports:
-      - 8080:80
+      - 8000:80
     volumes:
       - .:/var/www/html
     restart: always
