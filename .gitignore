@@ -6,6 +6,7 @@
 !ttrss/
 !funkwhale/
 !mediawiki/
+!syncthing/
 !**/docker-compose.yml
 !**/Dockerfile
 !.gitignore
