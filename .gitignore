@@ -7,6 +7,7 @@
 !funkwhale/
 !mediawiki/
 !syncthing/
+!nitter/
 !**/docker-compose.yml
 !**/Dockerfile
 !.gitignore

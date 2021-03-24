@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    nitter:
+        image: zedeus/nitter
+        container_name: nitter
+        restart: always
+        ports:
+            - "8888:8080"
+        volumes:
+            - ./nitter.conf:/src/nitter.conf
