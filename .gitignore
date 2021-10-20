@@ -1,13 +1,12 @@
 *
 !gitea/
-!ghost/
 !nextcloud/
-!standardfile/
 !ttrss/
-!funkwhale/
-!mediawiki/
 !syncthing/
-!nitter/
+!deprecated/
+!deprecated/funkwhale/
+!deprecated/mediawiki/
+!deprecated/nitter/
 !**/docker-compose.yml
 !**/Dockerfile
 !.gitignore
