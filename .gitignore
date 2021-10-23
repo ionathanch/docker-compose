@@ -1,12 +1,8 @@
 *
 !gitea/
 !nextcloud/
-!ttrss/
+!freshrss/
 !syncthing/
-!deprecated/
-!deprecated/funkwhale/
-!deprecated/mediawiki/
-!deprecated/nitter/
 !**/docker-compose.yml
 !**/Dockerfile
 !.gitignore
