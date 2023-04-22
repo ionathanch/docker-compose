@@ -7,7 +7,7 @@ networks:
 services:   
     server:     
         build: .
-        image: gitea/gitea
+        image: codeberg.org/forgejo/forgejo:1.18
         container_name: gitea
         environment:       
             - USER_UID=1000       
@@ -15,7 +15,7 @@ services:
             - RUN_MODE=prod
         restart: always     
         networks:       
-            - gitea     
+            - gitea
         volumes:       
             - .:/data     
         ports:       
