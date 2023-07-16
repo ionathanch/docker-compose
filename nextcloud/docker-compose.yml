@@ -1,6 +1,10 @@
 version: '2'
 
 services:
+  redis:
+    image: redis:latest
+    container_name: redis
+    restart: always
   app:
     image: nextcloud:latest
     container_name: nextcloud
@@ -10,3 +14,7 @@ services:
     volumes:
       - .:/var/www/html
     restart: always
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
